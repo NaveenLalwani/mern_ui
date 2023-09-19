@@ -7,7 +7,7 @@ function App() {
 
   const calculateAge = async () => {
     try {
-      const response = await fetch(`http://16.16.117.49:4000/calculate-age?dob=${dob}`);
+      const response = await fetch(`https://16.16.117.49:4000/calculate-age?dob=${dob}`);
       const data = await response.json();
 
       if (response.status === 200) {
